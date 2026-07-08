@@ -1,0 +1,25 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "Gateway relay server for remote PC control — bridges Agent (Windows/C#) and Controller (Web) via Socket.IO",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test:mock-agent": "node tests/mock-agent.js",
+    "test:mock-controller": "node tests/mock-controller.js"
+  },
+  "keywords": ["gateway", "socket.io", "remote-control", "relay"],
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "socket.io-client": "^4.8.1"
+  }
+}
